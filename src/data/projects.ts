@@ -1,4 +1,4 @@
-import xuryaimg from '../assets/xuryathumbnail.png'
+import xuryaimg from '../assets/xuryathumbnail.PNG'
 
 export type ProjectType = 'Web' | 'Mobile'
 
