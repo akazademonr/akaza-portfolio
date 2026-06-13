@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { SmoothScrollProvider } from './providers/SmoothScrollProvider.tsx'
-import ScrollToTop from './components/scrollToTop.tsx'
+import ScrollToTop from './components/ScrollToTop.tsx'
 
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
@@ -16,8 +16,9 @@ if (window.location.hash) {
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <SmoothScrollProvider>
-      <ScrollToTop />
+      <ScrollToTop >
       <App />
+      </ScrollToTop>
     </SmoothScrollProvider>
   </BrowserRouter>
 )
