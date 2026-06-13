@@ -16,9 +16,8 @@ if (window.location.hash) {
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <SmoothScrollProvider>
-      <ScrollToTop >
+      <ScrollToTop />
       <App />
-      </ScrollToTop>
     </SmoothScrollProvider>
   </BrowserRouter>
 )
