@@ -52,8 +52,10 @@ export default function Navbar() {
 
   // Close mobile menu on route change
   useEffect(() => {
+    if (!mobileOpen) return
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false)
-  }, [location.pathname])
+  }, [location.pathname, mobileOpen])
 
   const toggleDarkMode = () => {
     setIsDarkMode((prev) => !prev)
