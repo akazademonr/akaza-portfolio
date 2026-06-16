@@ -39,12 +39,12 @@ export const ContactSection: React.FC = () => {
         <ScrollReveal>
           <div className="mb-6">
             <h1
-              className="text-[100px] text-black dark:text-white mt-12 text-center leading-none"
+              className="text-[clamp(3rem,7vw,5.25rem)] text-black dark:text-white mt-12 text-center leading-none"
               style={{ fontFamily: 'Acorn, sans-serif' }}
             >
               Get in Touch
             </h1>
-            <p className="text-neutral-700 dark:text-neutral-400 mt-10 leading-relaxed text-[20px] font-['Chillax'] text-left">
+            <p className="text-neutral-700 dark:text-neutral-400 mt-10 leading-relaxed text-base sm:text-lg font-['Chillax'] text-left">
               I'm always interested in exploring new opportunities, collaborating, or exchanging
               ideas with like-minded individuals. Feel free to book a call or email me if you'd like
               to see my portfolio deck or to discuss a potential project.

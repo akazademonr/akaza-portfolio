@@ -35,12 +35,12 @@ export const TechMarquee: React.FC<TechMarqueeProps> = ({
             duration: speed,
             repeat: Infinity,
           }}
-          className="flex gap-20 pr-20 items-center whitespace-nowrap min-w-max"
+          className="flex gap-12 sm:gap-16 pr-12 sm:pr-16 items-center whitespace-nowrap min-w-max"
         >
           {duplicatedItems.map((item, index) => (
             <div
               key={`${item.name}-${index}`}
-              className={`text-8xl md:text-9xl text-neutral-500 dark:text-neutral-500 
+              className={`text-6xl md:text-8xl lg:text-9xl text-neutral-500 dark:text-neutral-500 
                          filter grayscale opacity-70
                          hover:filter-none hover:opacity-100 
                          transition-all duration-300 ease-out cursor-pointer

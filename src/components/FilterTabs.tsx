@@ -12,13 +12,13 @@ const filters: ProjectFilter[] = ['All', 'Web', 'Mobile']
 export default function FilterTabs({ active, onChange }: FilterTabsProps) {
   return (
     <div
-      className="inline-flex items-center gap-1.5 mt-12 p-1.5 rounded-full
+      className="flex flex-wrap justify-center items-center gap-2 mt-12 p-1.5 rounded-full
         bg-white/60 dark:bg-gray-900/60 
         backdrop-blur-xl 
         border border-gray-100 dark:border-gray-700
         shadow-[0_8px_32px_0_rgba(0,0,0,0.06),inset_0_1px_1.5px_rgba(255,255,255,0.4)]
         dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3),inset_0_1px_1px_rgba(255,255,255,0.05)]
-        transition-all duration-300"
+        transition-all duration-300 max-w-full overflow-hidden"
       style={{ fontFamily: 'Chillax, sans-serif' }}
     >
       {filters.map((filter) => {
@@ -28,7 +28,7 @@ export default function FilterTabs({ active, onChange }: FilterTabsProps) {
             key={filter}
             type="button"
             onClick={() => onChange(filter)}
-            className={`relative text-[15px] md:text-base font-semibold px-6 py-2.5 rounded-full transition-colors duration-300 cursor-pointer z-10 select-none ${
+            className={`relative text-[14px] sm:text-[15px] md:text-base font-semibold px-4 sm:px-5 py-2.5 rounded-full transition-colors duration-300 cursor-pointer z-10 select-none ${
               isActive
                 ? 'text-white dark:text-black font-bold'
                 : 'text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white'

@@ -22,7 +22,7 @@ export default function AboutPage() {
     <main className="w-full max-w-3xl px-6 md:px-8 mt-16 mb-24 text-black dark:text-white">
       <ScrollReveal>
         <h1
-          className="text-[100px] text-center leading-none mb-12 bg-gradient-to-b from-black to-neutral-600 dark:from-white dark:to-neutral-400 bg-clip-text text-transparent"
+          className="text-[clamp(3.5rem,7vw,6rem)] text-center leading-none mb-12 bg-gradient-to-b from-black to-neutral-600 dark:from-white dark:to-neutral-400 bg-clip-text text-transparent"
           style={{ fontFamily: 'Acorn, sans-serif' }}
         >
           About Me

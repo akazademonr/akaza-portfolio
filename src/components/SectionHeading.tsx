@@ -9,7 +9,7 @@ export default function SectionHeading({ children, className = '' }: SectionHead
   return (
     <ScrollReveal>
       <h1
-        className={`text-[100px] text-black dark:text-white mt-12 text-center leading-none ${className}`}
+        className={`text-[clamp(3.5rem,6.8vw,6rem)] text-black dark:text-white mt-12 text-center leading-none ${className}`}
         style={{ fontFamily: 'Acorn, sans-serif' }}
       >
         {children}

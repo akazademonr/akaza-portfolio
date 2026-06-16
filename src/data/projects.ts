@@ -1,4 +1,5 @@
 import xuryaimg from '../assets/xuryathumbnail.png'
+import harveyNashimg from '../assets/harveythumbnail.png'
 
 export type ProjectType = 'Web' | 'Mobile'
 
@@ -23,4 +24,15 @@ export const projects: Project[] = [
     image: xuryaimg,
     link: 'https://xurya-landing-page.vercel.app/',
   },
+
+  {
+    type: 'Web',
+    category: 'Web App',
+    title: 'Harvey Nash',
+    description:
+      'A modern, responsive landing page build emphasizing aesthetic clarity and interface fluidity. Developed to showcase professional-grade UI/UX execution, focusing on responsive layouts and polished interactive components to drive user conversion and brand identity.',
+    tags: ['Html', 'Css', 'Javascript'],
+    image: harveyNashimg,
+    link: 'https://xurya-landing-page.vercel.app/',
+  }
 ]

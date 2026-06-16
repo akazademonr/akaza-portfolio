@@ -17,7 +17,7 @@ const item = {
   },
 }
 
-const headingClass = "font-bold m-0 leading-none text-[48px] sm:text-[72px] md:text-[90px] lg:text-[117px]"
+const headingClass = "font-bold m-0 leading-none text-[clamp(2.75rem,9vw,6rem)] sm:text-[clamp(3.5rem,8vw,7rem)] md:text-[clamp(4.5rem,7vw,8rem)] lg:text-[clamp(5.5rem,6vw,9rem)]"
 
 export default function HeroSection() {
   const reduceMotion = useReducedMotion()
@@ -25,7 +25,7 @@ export default function HeroSection() {
   if (reduceMotion) {
     return (
       <section className="text-center mt-10 sm:mt-12 md:mt-14 lg:mt-16 mb-16 sm:mb-20 lg:mb-24 text-black dark:text-white px-4">
-        <div>
+        <div className="mx-auto max-w-5xl px-2">
           <h1 className={headingClass} style={{ fontFamily: 'Acorn, sans-serif' }}>
             Hi. I'm Akaza
           </h1>
@@ -33,7 +33,7 @@ export default function HeroSection() {
             FullStack Dev.
           </h1>
         </div>
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-4xl mx-auto dark:text-gray-300 px-4 sm:px-8 mt-4">
+        <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto dark:text-gray-300 px-4 sm:px-8 mt-4">
           I love building seamless web and mobile experiences that look great and work perfectly. I specialize in creating user-friendly apps that are fast, accessible, and well-designed.
         </p>
         <HeroButton />
@@ -60,7 +60,7 @@ export default function HeroSection() {
         </motion.h1>
         <motion.p
           variants={item}
-          className="text-base sm:text-lg md:text-xl text-gray-700 max-w-4xl mx-auto dark:text-gray-300 px-4 sm:px-8 mt-4"
+          className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto dark:text-gray-300 px-4 sm:px-8 mt-4"
         >
           I love building seamless web and mobile experiences that look great and work perfectly. I
           specialize in creating user-friendly apps that are fast, accessible, and well-designed.

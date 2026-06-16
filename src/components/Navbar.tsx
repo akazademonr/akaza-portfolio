@@ -90,7 +90,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => goToSection('work')}
-          className={`relative px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 cursor-pointer ${
+          className={`relative px-5 sm:px-6 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 cursor-pointer ${
             isWorkActive ? 'text-white dark:text-black' : 'text-black dark:text-white'
           }`}
         >
@@ -107,7 +107,7 @@ export default function Navbar() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `relative px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 ${
+            `relative px-5 sm:px-6 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 ${
               isActive ? 'text-white dark:text-black' : 'text-black dark:text-white'
             }`
           }
@@ -129,7 +129,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => goToSection('contact')}
-          className={`relative px-8 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 cursor-pointer ${
+          className={`relative px-5 sm:px-6 py-3 rounded-full font-semibold text-lg transition-colors duration-300 z-10 cursor-pointer ${
             isContactActive ? 'text-white dark:text-black' : 'text-black dark:text-white'
           }`}
         >
@@ -217,7 +217,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.97 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden fixed top-20 left-4 right-4 z-40 rounded-2xl border p-3 flex flex-col gap-1
+            className="md:hidden fixed inset-x-4 top-20 z-40 max-w-[calc(100vw-2rem)] mx-auto rounded-2xl border p-3 flex flex-col gap-2 max-h-[calc(100vh-6.5rem)] overflow-y-auto
               bg-white/95 dark:bg-gray-900/95 backdrop-blur-2xl
               border-gray-100/80 dark:border-gray-700/80 shadow-xl"
           >
