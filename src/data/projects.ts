@@ -33,6 +33,6 @@ export const projects: Project[] = [
       'A modern, responsive landing page build emphasizing aesthetic clarity and interface fluidity. Developed to showcase professional-grade UI/UX execution, focusing on responsive layouts and polished interactive components to drive user conversion and brand identity.',
     tags: ['Html', 'Css', 'Javascript'],
     image: harveyNashimg,
-    link: 'https://xurya-landing-page.vercel.app/',
+    link: 'https://harvey-nash-mu.vercel.app/',
   }
 ]
